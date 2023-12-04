@@ -1,38 +1,77 @@
-.App {
-  text-align: center;
+/* App.css */
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.app {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.sidebar {
+  width: 300px;
+  background-color: #1b2836;
+  padding: 20px;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.sidebar-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.main {
+  flex: 1;
+  padding: 20px;
+}
+
+.post-form {
+  margin-bottom: 20px;
+}
+
+.post {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #ffffff;
+  padding: 16px;
+  margin-bottom: 16px;
+}
+
+.posts {
+  display: flex;
+  flex-direction: column;
+}
+
+button {
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+  margin-right: 10px;
+}
+
+button:active,
+button:focus {
+  outline: none;
+}
+
+/* Like button ranglari */
+button.like {
+  color: #657786;
+}
+
+button.like.active {
+  color: #e0245e;
+}
+
+/* Retweet button ranglari */
+button.retweet {
+  color: #657786;
+}
+
+button.retweet.active {
+  color: #17bf63;
 }
